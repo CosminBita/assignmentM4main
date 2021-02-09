@@ -5,27 +5,25 @@
     <title>Advanced CSS - Assignment 1</title>
     <style>
       a[href*="google.com"] {
-          color:green;
+        color: green;
       }
       a[target] {
-          color:red;
+        color: red;
       }
       #second-div p:nth-child(odd) {
-          color:blue;
+        color: blue;
       }
       #second-div p:nth-child(even) {
-          color:red;
+        color: red;
       }
-      #first-div p:nth-last-child(2)::after {
-          content: "-NEW";
-          color:yellow;
+      #first-div > p::after {
+        content: "NEW";
+
+        color: yellow;
       }
-      #first-div p:nth-last-child(3)::after {
-          content: "-NEW";
-          color:yellow;
-      }
-     p:last-child:hover {
-          font-style: italic;
+
+      p:nth-child(8):hover {
+        font-style: italic;
       }
     </style>
   </head>
